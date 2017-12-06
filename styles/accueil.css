@@ -1,0 +1,81 @@
+/* --------- ACCUEIL --------- */
+
+#ecranAccueil{
+  background-image: url("images/accueilImage.jpg");
+  height: 100vh;
+}
+
+#ecranAccueil h1{
+  color : white;
+  /* haut | droit | bas | gauche */
+  margin : 0% auto 0% auto;
+  text-align : center;
+  font-size: 70px;
+  font-weight: normal;
+  width : 40%;
+  min-width: 385px;
+  padding-top: 15%;
+}
+
+#toContentAccueil{
+  text-align : center;
+  margin-top : 18%;
+}
+
+#toContentAccueil a{
+  text-decoration: none;
+  color : white;
+}
+
+#toContentAccueil a img{
+  width : 5em;
+  height: 5em;
+}
+
+#presentation{
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.5em;
+  /* haut | droit | bas | gauche */
+  margin : 1% 26% 1% 26%;
+}
+
+#galerie{
+  
+}
+
+#slider { 
+	width: 100%;
+	overflow: hidden;
+	
+}
+#slider figure img{
+	width: 400px; 
+	height: 270px;
+}
+
+#slider figure { 
+	position: relative; 
+	width: 500%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	display: flex;
+	animation: 40s slidy infinite;
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  10% { left: 0%;}
+  15% { left: -10%}
+  20% { left: -20%}
+  25% { left: -20%}
+  30% { left: -30%}
+  35% { left: -30%}
+  50% { left: -40%; }
+  70% { left: -40%; }
+  75% { left: -60%; }
+  95% { left: -60%; }
+  100% { left: -80%; }
+
+}
