@@ -3,45 +3,107 @@
 <head>
   <meta charset="utf-8">
   <title>La Bretagne ça vous gagne</title>
-  <link rel="stylesheet" media="screen" href="styles/style.css">
+  <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen and (min-width:950px)" href="styles/styleDesktop.css">
+  <link rel="stylesheet" media="screen and (max-width:950px)" href="styles/styleMobile.css">
   <link rel="stylesheet" media="screen" href="styles/accueil.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div id="presentationMobile">
+    <a id="deroulerMenu" href="javascript:void(0)" onclick="menuDeroulant();">
+      <img src="styles/images/menuMobile.png">
+    </a>
+    <p id="titreMobile">La Bretagne ça vous gagne !</p>
+    <div id="reseauxSociauxMobile">
+      <a href="http://www.facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
+      <a href="http://www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
+      <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p fa-lg"></i></a>
+      <a href="http://www.twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
+    </div>
+  </div>
   <nav>
-		<ul>
-			<li><a class="active" href="index.html">Accueil</a></li>
-			<li><a href="histoire.html">Histoire</a></li>
-			<li><a href="culture.html">Culture</a></li>
-			<li><a href="hotels.html">Hôtels</a></li>
-			<li><a href="activites.html">Activités</a></li>
-			<li><a href="pratique.html">Pratique</a></li>
+    <ul>
+      <li><a class="active" href="index.html">Accueil</a></li>
+      <li><a href="histoire.html">Histoire</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="hotels.html">Hôtels</a></li>
+      <li><a href="activites.html">Activités</a></li>
+      <li><a href="pratique.html">Pratique</a></li>
       <li id="reseauxSociaux">
-        <a href="http://www.facebook.com"><img src="styles/images/facebook-logo.svg"></a>
-        <a href="http://www.instagram.com"><img src="styles/images/instagram-logo.svg"></a>
-        <a href="http://www.pinterest.com"><img src="styles/images/pinterest-logo.svg"></a>
-        <a href="http://www.twitter.com"><img src="styles/images/twitter-logo.svg"></a>
+        <a href="http://www.facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
+        <a href="http://www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
+        <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p fa-lg"></i></a>
+        <a href="http://www.twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
       </li>
-		</ul>
+    </ul>
   </nav>
   <div id="ecranAccueil" class="parallax">
     <h1 class="outline">La Bretagne ça vous gagne !</h1>
     <p id="toContentAccueil">
-      <a href="#contentAccueil"><img src="styles/images/arrow.png"></a>
+      <a href="#contentAccueil"><img src="styles/images/accueil/arrow.png"></a>
     </p>
   </div>
   <div id="contentAccueil">
-  	<div id="selectRubrique">
-  	  <p id="presentation">
-        La Bretagne ça vous gagne !
-        La Bretagne est une région avec une culture musicale,
-        gastronomique unique, des traditions qui perdurent à travers
-        les siècles et une histoire passionnante. À travers ce site nous
-        tentons de vous faire découvrir les coutumes bretonnes mais également
-        les lieux à ne pas manquer pour un séjour en Bretagne plus que réussi !
-        Bonne visite !
+    <div id="presentationSite">
+      <p>
+        La Bretagne est une région avec une culture musicale, gastronomique unique,
+        des traditions qui perdurent à travers les siècles et une histoire
+        passionnante. À travers ce site nous tentons de vous faire découvrir les
+        coutumes bretonnes mais également les lieux à ne pas manquer pour un séjour en
+        Bretagne plus que réussi ! Bonne visite !
       </p>
-  	  <div id="galerie">
-        
+    </div>
+    <div id="selectRubrique">
+      <div class="itemGalerie" href="" id="histoire">
+        <a href="">Histoire</a>
       </div>
-  	</div>
+      <div class="itemGalerie" id="culture">
+        <a href="">Culture</a>
+      </div>
+      <div class="itemGalerie" id="hotels">
+        <a href="">Hôtels</a>
+      </div>
+      <div class="itemGalerie" id="activites">
+        <a href="">Activités</a>
+      </div>
+      <div class="itemGalerie" id="pratique">
+        <a href="">Pratique</a>
+      </div>
+    </div>
   </div>
+  <footer>
+    <div id="reseauxSociauxFooter">
+      <a href="http://www.facebook.com" style="grid-column:1"><p><i class="fa fa-facebook fa-lg"></i>  Facebook</p></a>
+      <a href="http://www.instagram.com" style="grid-column:2"><p><i class="fa fa-instagram fa-lg"></i>  Instagram</p></a>
+      <a href="http://www.pinterest.com" style="grid-column:3"><p><i class="fa fa-pinterest-p fa-lg"></i>  Pinterest</p></a>
+      <a href="http://www.twitter.com" style="grid-column:4"><p><i class="fa fa-twitter fa-lg"></i>  Twitter</p></a>
+    </div>
+    <div id="slider">
+      <figure>
+        <img src="styles/images/Carousel/im1.jpg">
+        <img src="styles/images/Carousel/im2.jpg">
+        <img src="styles/images/Carousel/im3.jpg">
+        <img src="styles/images/Carousel/im4.jpg">
+        <img src="styles/images/Carousel/im5.jpg">
+        <img src="styles/images/Carousel/im6.jpg">
+        <img src="styles/images/Carousel/im7.jpg">
+        <img src="styles/images/Carousel/im8.jpg">
+        <img src="styles/images/Carousel/im9.jpg">
+        <img src="styles/images/Carousel/im10.jpg">
+        <img src="styles/images/Carousel/im11.jpg">
+        <img src="styles/images/Carousel/im12.jpg">
+        <img src="styles/images/Carousel/im13.jpg">
+        <img src="styles/images/Carousel/im14.jpg">
+        <img src="styles/images/Carousel/im15.jpg">
+      </figure>
+    </div>
+    <div id="infos">
+      <div id="aPropos">
+      </div>
+      <div id="newsletter">
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

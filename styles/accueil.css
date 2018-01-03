@@ -1,7 +1,7 @@
-/* --------- ACCUEIL --------- */
+/* Ecran d'accueil */
 
 #ecranAccueil{
-  background-image: url("images/accueilImage.jpg");
+  background-image: url("images/accueil/accueilImage.jpg");
   height: 100vh;
 }
 
@@ -10,21 +10,16 @@
   /* haut | droit | bas | gauche */
   margin : 0% auto 0% auto;
   text-align : center;
-  font-size: 70px;
+  font-size: 4em;
   font-weight: normal;
-  width : 40%;
+  width : 45%;
   min-width: 385px;
   padding-top: 15%;
 }
 
 #toContentAccueil{
   text-align : center;
-  margin-top : 18%;
-}
-
-#toContentAccueil a{
-  text-decoration: none;
-  color : white;
+  margin-top : 10%;
 }
 
 #toContentAccueil a img{
@@ -32,14 +27,80 @@
   height: 5em;
 }
 
-#presentation{
-  text-align: center;
-  font-size: 17px;
-  line-height: 1.5em;
-  /* haut | droit | bas | gauche */
-  margin : 1% 26% 1% 26%;
+/* Contenu accueil */
+
+#presentationSite p{
+    text-align: center;
+    margin-left: 27%;
+    margin-right: 27%;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
-#galerie{
-  
+#selectRubrique{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+#histoire{ background-image: url("images/accueil/anneBretagne.jpg"); }
+#culture{ background-image: url("images/accueil/drapeau_breton.jpg"); }
+#hotels{ background-image: url("images/accueil/hotelS2.jpg"); }
+#activites{ background-image: url("images/accueil/rocher_tourisme.jpg"); }
+#pratique{ background-image: url("images/accueil/cyclisme.jpg"); }
+
+#selectRubrique .itemGalerie{
+  width : 316px;
+  height: 310px;
+  background-size: cover;
+  vertical-align: bottom;
+  font-size: 2em;
+  margin: 0.5%;
+  margin-bottom: 10px;
+}
+
+#selectRubrique .itemGalerie a{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin : 0;
+  z-index: 1;
+  transition-duration: 1s;
+  color: transparent;
+  line-height: 9;
+}
+
+#selectRubrique .itemGalerie a:hover{
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* MOBILE */
+@media screen and (max-width:950px){
+  #presentationSite p{
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+}
+
+/* PETIT MOBILE */
+@media screen and (max-width:400px){
+  #ecranAccueil h1{
+    font-size: 2em;
+    width : 100%;
+    min-width: auto;
+    padding-top: 40%;
+  }
+
+  #toContentAccueil{
+    margin-top : 50%;
+  }
+
+  #toContentAccueil a img{
+    width : 4em;
+    height: 4em;
+  }
 }

@@ -1,0 +1,51 @@
+.carte{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carte path{
+  /* Couleur */
+  fill: #bff7f0;
+  stroke: #000;
+  stroke-width: 1px;
+  transition-duration: 1s;
+}
+
+#franceCarte #FR-BRE{
+  /* Couleur */
+  fill: #82a9f3;
+}
+
+#franceCarte #FR-BRE:hover{
+  /* Couleur */
+  fill: #ff8db3;
+}
+
+#bretagneCarte{
+  display: none;
+}
+
+#bretagneCarte path:hover{
+  /* Couleur */
+  fill: #82a9f3;
+}
+
+#bretagneCarte input{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+/*
+g title{
+  display:none;
+  fill:#fff;
+  font-size:2em;
+  font-family:sans-serif;
+}
+
+g:hover > title{
+  display:block;
+}
+*/
