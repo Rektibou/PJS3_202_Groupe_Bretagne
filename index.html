@@ -4,10 +4,18 @@
   <meta charset="utf-8">
   <title>La Bretagne ça vous gagne</title>
   <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" media="screen and (min-width:950px)" href="styles/styleDesktop.css">
+  <link rel="stylesheet" media="screen and (min-width:949px)" href="styles/styleDesktop.css">
   <link rel="stylesheet" media="screen and (max-width:950px)" href="styles/styleMobile.css">
   <link rel="stylesheet" media="screen" href="styles/accueil.css">
   <script src="js/script.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
+  <script type="text/javascript"> 
+	  $(document).ready(function(){   
+		  // Call the parallax plugin
+		 $('#ecranAccueil').parallax({ 'coeff':-0.1 });
+	  })
+  </script>
 </head>
 <body>
   <div id="presentationMobile">
@@ -39,7 +47,7 @@
     </ul>
   </nav>
   <div id="ecranAccueil" class="parallax">
-    <h1 class="outline">La Bretagne ça vous gagne !</h1>
+	<h1 class="outline">La Bretagne ça vous gagne !</h1>
     <p id="toContentAccueil">
       <a href="#contentAccueil"><img src="styles/images/accueil/arrow.png"></a>
     </p>
