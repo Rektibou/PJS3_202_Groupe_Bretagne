@@ -1,0 +1,92 @@
+#main{
+  background-image: url("images/hotels/hotelS4.jpg");
+  height: 500px;
+  color: white;
+  text-align: center;
+}
+
+#main h1{
+  font-size: 40px;
+  position: relative;
+  top: 35%;
+}
+
+#main p{
+  font-size: 17px;
+  position: relative;
+  top: 35%;
+  width: 50%;
+  left: 25%;
+}
+
+@media screen and (max-width:400px){
+  #main h1{
+    top: 25%;
+  }
+
+  #main p{
+    top: 25%;
+  }
+}
+
+@media screen and (max-width:950px){
+  #main p{
+    width: 70%;
+    left: 15%;
+  }
+}
+
+.article{
+  background-color: white;
+  width: 100%;
+  min-height: 300px;
+}
+
+.article h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.article .contenuArticle{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: stretch;
+}
+
+.article .contenuArticle .texteArticle{
+  color:  #696969;
+  width: 50%;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.article .contenuArticle .texteArticle ul li ul li{ /* <li> imbriqués */
+  list-style: circle;
+}
+
+.article .contenuArticle .imagesArticle{
+  text-align: center;
+}
+
+
+.article .contenuArticle .imagesArticle img{
+  display: block;
+  margin-left: 10%;
+  margin-top: 3%;
+  max-width: 400px;
+  max-height: 600px;
+}
+
+.separator{
+  width: 100%;
+  height: 430px;
+  margin-top: 2%;
+}
+
+@media screen and (max-width:900px){
+  .article .contenuArticle .texteArticle{
+    width: 90%;
+  }
+}

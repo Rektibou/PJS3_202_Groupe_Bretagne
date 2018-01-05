@@ -19,7 +19,7 @@ html, body{
     height: 100%;
   /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: 0px 0px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -60,6 +60,7 @@ nav{
   position: fixed;
   width: 100%;
   background-color: #F2F2F2;
+  z-index: 1;
 }
 
 #titreMobile{
@@ -158,6 +159,10 @@ nav #reseauxSociaux a{
 
 /* Footer */
 
+footer{
+  overflow: hidden;
+}
+
 footer #reseauxSociauxFooter{
   /* Bleu turquoise */
   background-color: #3AC0C7;
@@ -202,9 +207,125 @@ footer #slider figure {
 	animation: 100s slidy infinite;
 }
 
+@keyframes slidy {
+	/*%tps {%depla barre} */
+  0% { left: 0px }
+  2,5%  { left: 0px }
+  5% { left: -400px}
+  7,5% { left: -400px}
+  10% { left: -800px}
+  12,5% { left: -800px}
+  15% { left: -1200px}
+  17,5% { left: -1200px}
+  20%{ left: -1600px }
+  22,5%{ left: -1600px }
+  25%{ left: -2000px }
+  27,5%{ left: -2000px }
+  30%{ left: -2400px }
+  32,5%{ left: -2400px }
+  35%{ left: -2800px }
+  37,5%{ left: -2800px }
+  40%{ left: -3200px }
+  42,5%{ left: -3200px }
+  45%{ left: -3600px }
+  47,5%{ left: -3600px }
+  50% { left: -4000px }
+  52,5%{ left: -4000px }
+  55%{ left: -3600px }
+  57,5%{ left: -3600px }
+  60%{ left: -3200px }
+  62,5%{ left: -3200px }
+  65%{ left: -2800px }
+  67,5%{ left: -2800px }
+  70%{ left: -2400px }
+  72,5%{ left: -2400px }
+  75%{ left: -2000px }
+  77,5%{ left: -2000px }
+  80%{ left: -1600px}
+  82,5% { left: -1600px}
+  85% { left: -1200px}
+  87,5%{ left: -1200px}
+  90%{ left: -800px}
+  92,5% { left: -800px}
+  95%  { left: -400px }
+  97,5% { left: 0px }
+  100% { left: 0px }
+}
+
 footer #infos{
-  height: 400px;
+  height: 450px;
   background-color: #C9C9C9;
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  min-width: 400px;
+}
+
+footer #infos #aPropos #triskell{
+  background-image: url("images/Triskell.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+footer #infos #aPropos *{
+  color: #696969;
+}
+
+footer #infos #aPropos h2{
+  font-weight: bold;
+}
+
+footer #infos #newsletter{
+  background-color: #8DD6DA;
+  width: 25%;
+  min-width: 370px;
+}
+
+footer #infos #newsletter h2{
+  margin: auto 20px auto 20px;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer #infos #newsletter form{
+  padding-bottom: 10px;
+}
+
+footer #infos #newsletter form #mail{
+  background-color: white;
+  height: 35px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+footer #infos #newsletter form #mail i{
+  margin-left: 2%;
+}
+
+footer #infos #newsletter form #mail input{
+  height: 100%;
+  border-width: 0px;
+  padding: 0px 0px 0px 0px;
+  margin-left: 2%;
+  width: 80%;
+}
+
+footer #infos #newsletter form #btnSub{
+  display: block;
+  width: 90%;
+  margin: auto;
+  height: 50px;
+  background-color: #3AC0C7;
+  border-width: 0px;
+  border-radius: 3px;
+  color: white;
 }
 
 /* PETIT MOBILE */
@@ -219,5 +340,9 @@ footer #infos{
 
   footer #reseauxSociauxFooter a{
     display: none;
+  }
+
+  footer #infos #newsletter form #mail i{
+    margin-left: 0px;
   }
 }

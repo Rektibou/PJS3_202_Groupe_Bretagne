@@ -8,19 +8,16 @@
   <link rel="stylesheet" media="screen and (max-width:950px)" href="styles/styleMobile.css">
   <link rel="stylesheet" media="screen" href="styles/accueil.css">
   <script src="js/script.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jquery.parallax.js"></script>
-  <script type="text/javascript"> 
-	  $(document).ready(function(){   
-		  // Call the parallax plugin
-		 $('#ecranAccueil').parallax({ 'coeff':-0.1 });
-	  })
+  <script type="text/javascript">
+  $(document).ready(function(){ $('#ecranAccueil').parallax({ 'coeff':-0.2 });}) // Appel plugin parallax
   </script>
 </head>
 <body>
   <div id="presentationMobile">
     <a id="deroulerMenu" href="javascript:void(0)" onclick="menuDeroulant();">
-      <img src="styles/images/menuMobile.png">
+      <img alt="menuMobile" src="styles/images/menuMobile.png">
     </a>
     <p id="titreMobile">La Bretagne ça vous gagne !</p>
     <div id="reseauxSociauxMobile">
@@ -47,9 +44,9 @@
     </ul>
   </nav>
   <div id="ecranAccueil" class="parallax">
-	<h1 class="outline">La Bretagne ça vous gagne !</h1>
+    <h1 class="outline">La Bretagne ça vous gagne !</h1>
     <p id="toContentAccueil">
-      <a href="#contentAccueil"><img src="styles/images/accueil/arrow.png"></a>
+      <a href="#contentAccueil"><img alt="arrow" src="styles/images/accueil/arrow.png"></a>
     </p>
   </div>
   <div id="contentAccueil">
@@ -89,29 +86,42 @@
     </div>
     <div id="slider">
       <figure>
-        <img src="styles/images/Carousel/im1.jpg">
-        <img src="styles/images/Carousel/im2.jpg">
-        <img src="styles/images/Carousel/im3.jpg">
-        <img src="styles/images/Carousel/im4.jpg">
-        <img src="styles/images/Carousel/im5.jpg">
-        <img src="styles/images/Carousel/im6.jpg">
-        <img src="styles/images/Carousel/im7.jpg">
-        <img src="styles/images/Carousel/im8.jpg">
-        <img src="styles/images/Carousel/im9.jpg">
-        <img src="styles/images/Carousel/im10.jpg">
-        <img src="styles/images/Carousel/im11.jpg">
-        <img src="styles/images/Carousel/im12.jpg">
-        <img src="styles/images/Carousel/im13.jpg">
-        <img src="styles/images/Carousel/im14.jpg">
-        <img src="styles/images/Carousel/im15.jpg">
+        <img alt="im1" src="styles/images/Carousel/im1.jpg">
+        <img alt="im2" src="styles/images/Carousel/im2.jpg">
+        <img alt="im3" src="styles/images/Carousel/im3.jpg">
+        <img alt="im4" src="styles/images/Carousel/im4.jpg">
+        <img alt="im5" src="styles/images/Carousel/im5.jpg">
+        <img alt="im6" src="styles/images/Carousel/im6.jpg">
+        <img alt="im7" src="styles/images/Carousel/im7.jpg">
+        <img alt="im8" src="styles/images/Carousel/im8.jpg">
+        <img alt="im9" src="styles/images/Carousel/im9.jpg">
+        <img alt="im10" src="styles/images/Carousel/im10.jpg">
+        <img alt="im11" src="styles/images/Carousel/im11.jpg">
+        <img alt="im12" src="styles/images/Carousel/im12.jpg">
+        <img alt="im13" src="styles/images/Carousel/im13.jpg">
+        <img alt="im14" src="styles/images/Carousel/im14.jpg">
+        <img alt="im15" src="styles/images/Carousel/im15.jpg">
       </figure>
     </div>
     <div id="infos">
       <div id="aPropos">
+        <div id="triskell"></div>
+        <h2>À propos</h2>
+        <p>Ce site a été créé dans le cadre du cours Méthodologie
+          de la production d'application (MPA).</p>
+          <p>2018 - Thomas FOULON, Brice GUILLAUME, Altan SORAN, Tristan AYMÉ-MARTIN</p>
+        </div>
+        <div id="newsletter">
+          <h2>S'abonner à la newsletter</h2>
+          <form action="index.html" method="post">
+            <div id="mail">
+              <i class="fa fa-envelope-o fa-lg"></i>
+              <input type="email" placeholder="Adresse mail"></input>
+            </div>
+            <input id="btnSub" type="submit" value="S'abonner"></input>
+          </form>
+        </div>
       </div>
-      <div id="newsletter">
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+    </footer>
+  </body>
+  </html>

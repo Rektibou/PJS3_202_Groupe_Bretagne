@@ -12,14 +12,16 @@
   text-align : center;
   font-size: 4em;
   font-weight: normal;
-  width : 45%;
-  min-width: 385px;
-  padding-top: 15%;
+  width : 40%;
+  min-width: 446px;
+  position: relative;
+  top: 30vh;
 }
 
 #toContentAccueil{
   text-align : center;
-  margin-top : 10%;
+  position: relative;
+  top: 60vh;
 }
 
 #toContentAccueil a img{
@@ -42,6 +44,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
+    margin-bottom: 1%;
 }
 
 #histoire{ background-image: url("images/accueil/anneBretagne.jpg"); }
@@ -87,16 +90,13 @@
 }
 
 /* PETIT MOBILE */
-@media screen and (max-width:400px){
+@media screen and (max-width:460px){
   #ecranAccueil h1{
     font-size: 2em;
-    width : 100%;
-    min-width: auto;
-    padding-top: 40%;
+    min-width: 250px;
   }
 
   #toContentAccueil{
-    margin-top : 50%;
   }
 
   #toContentAccueil a img{

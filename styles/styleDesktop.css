@@ -19,7 +19,7 @@ html, body{
     height: 100%;
   /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: 0px 0px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -43,7 +43,7 @@ nav{
 }
 1
 #deroulerMenu{
-  /* Pas d'icône mobile en affichage PC */
+  /* Pas d'icone mobile en affichage PC */
   display: none;
 }
 
@@ -149,7 +149,7 @@ footer #slider figure {
 }
 
 @keyframes slidy {
-	/*%tps {%dépla barre} */
+	/*%tps {%depla barre} */
   0% { left: 0px }
   2,5%  { left: 0px }
   5% { left: -400px}
@@ -194,6 +194,86 @@ footer #slider figure {
 }
 
 footer #infos{
-  height: 350px;
+  height: 450px;
   background-color: #C9C9C9;
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+footer #infos #aPropos #triskell{
+  background-image: url("images/Triskell.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+footer #infos #aPropos *{
+  color: #696969;
+}
+
+footer #infos #aPropos h2{
+  font-weight: bold;
+}
+
+footer #infos #aPropos{
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+footer #infos #newsletter{
+  background-color: #8DD6DA;
+  width: 25%;
+  margin-left: 10%;
+  min-width: 370px;
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+footer #infos #newsletter h2{
+  margin: auto 20px auto 20px;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer #infos #newsletter form{
+  padding-bottom: 10px;
+}
+
+footer #infos #newsletter form #mail{
+  background-color: white;
+  height: 35px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+footer #infos #newsletter form #mail i{
+  margin-left: 2%;
+}
+
+footer #infos #newsletter form #mail input{
+  height: 100%;
+  border-width: 0px;
+  padding: 0px 0px 0px 0px;
+  margin-left: 2%;
+  width: 80%;
+}
+
+footer #infos #newsletter form #btnSub{
+  display: block;
+  width: 90%;
+  margin: auto;
+  height: 50px;
+  background-color: #3AC0C7;
+  border-width: 0px;
+  border-radius: 3px;
+  color: white;
 }
