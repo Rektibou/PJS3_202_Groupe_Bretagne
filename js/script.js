@@ -13,6 +13,9 @@ function redimensionnement() {
   var navBar = document.getElementsByTagName('nav')[0];
   var RSnavBar = document.getElementById('reseauxSociaux');
 
+  /*var parallax = document.getElementsByClassName('parallax');*/
+
+  // Gestion du menu
   if("matchMedia" in window) { // Détection
     // Mobile
     if(window.matchMedia("(min-width:950px)").matches) {
@@ -21,6 +24,11 @@ function redimensionnement() {
       navBar.style.display = 'none';
     }
   }
+  /*
+  // Gestion de la parallaxe
+  for (var i = 0; i < parallax.length; i++)
+    parallax[i].style.backgroundPosition = '0px 0px';
+  */
 }
 
 // On lie l'événement resize à la fonction
