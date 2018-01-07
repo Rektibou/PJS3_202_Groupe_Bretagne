@@ -128,6 +128,31 @@ nav ul li a.active {
     color: #3AC0C7;
 }
 
+nav ul li#selectActivites nav{
+	background-color: white;
+  position : fixed;
+  z-index: 100; /* Evite pb carousel */
+  display: none;
+	padding-left: 0px;
+	width: auto;
+  height: 60px;
+  margin-top: 207px;
+  margin-left: 135px;
+}
+
+nav ul li#selectActivites:hover nav{
+	display: block;
+}
+
+nav ul li#selectActivites nav ul{
+}
+
+nav ul li#selectActivites nav ul li{
+	float: none;
+	padding: 5px 10px 5px 10px;
+	text-align: left;
+}
+
 /* Reseaux sociaux */
 
 nav #reseauxSociaux i{
@@ -307,6 +332,7 @@ footer #infos #newsletter form #mail{
 
 footer #infos #newsletter form #mail i{
   margin-left: 2%;
+  color: #696969;
 }
 
 footer #infos #newsletter form #mail input{

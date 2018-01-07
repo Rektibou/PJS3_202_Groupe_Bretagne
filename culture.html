@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Culture - La Bretagne ça vous gagne</title>
+  <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen and (min-width:949px)" href="styles/styleDesktop.css">
+  <link rel="stylesheet" media="screen and (max-width:950px)" href="styles/styleMobile.css">
+  <link rel="stylesheet" media="screen" href="styles/pageContenu.css">
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
+  <script type="text/javascript">
+  // APPEL PLUGIN PARALLAX
+  $(document).ready(function(){ $('#main').parallax({ 'coeff':-0.2 });})
+  $(document).ready(function(){ $('#separator1').parallax({ 'coeff':-0.2 });})
+  $(document).ready(function(){ $('#separator2').parallax({ 'coeff':-0.2 });})
+  $(document).ready(function(){ $('#separator3').parallax({ 'coeff':-0.2 });})
+  $(document).ready(function(){ $('#separator4').parallax({ 'coeff':-0.2 });})
+  </script>
+</head>
+<body>
+  <div id="presentationMobile">
+    <a id="deroulerMenu" href="javascript:void(0)" onclick="menuDeroulant();">
+      <img alt="menuMobile" src="styles/images/menuMobile.png">
+    </a>
+    <p id="titreMobile">La Bretagne ça vous gagne !</p>
+    <div id="reseauxSociauxMobile">
+      <a href="http://www.facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
+      <a href="http://www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
+      <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p fa-lg"></i></a>
+      <a href="http://www.twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="histoire.html">Histoire</a></li>
+      <li><a class="active" href="culture.html">Culture</a></li>
+      <li><a href="hotels.html">Hôtels</a></li>
+      <li id="selectActivites"><a href="activites.html">Activités</a>
+        <nav>
+          <ul>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="sitesHisto.html">Sites historiques, musées</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li><a href="pratique.html">Pratique</a></li>
+      <li id="reseauxSociaux">
+        <a href="http://www.facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
+        <a href="http://www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
+        <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p fa-lg"></i></a>
+        <a href="http://www.twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <div id="main" class="parallax" style="background-image: url('styles/images/culture/cornemuses.jpg');">
+    <h1 class="outline">Culture bretonne</h1>
+    <p class="outline">La culture bretonne est intimement liée à l’histoire de la
+      région et à l’essor économique qu’a connu celle-ci. Au milieu du XIXème siècle,
+      les chemins de fer traversent la Bretagne et les usines s’installent autour.
+      Les villes et les campagnes connaissent un essor économique celui-ci est propice
+      à la fête, la musique, la danse, etc.</p>
+  </div>
+  <div class="article">
+    <h2>Musique</h2>
+    <div class="contenuArticle">
+      <div class="texteArticle">
+        <p>Autrefois, <b>hautbois</b> s’unissaient à la <b>cornemuse</b> (biniou-koz). Ces instruments
+          sont encore utilisés aujourd'hui mais de nouveaux instruments sont incorporés
+          à la musique bretonne tels que l’<br>accordéon</b> ou le <b>violon</b>.<br><br>
+          Les chants bretons sont composés des chants à <b>danser</b>, à écouter, populaires,
+          marins. En 2010, <b>Nolwenn Leroy</b> rend hommage à la Bretagne et aux airs celtes
+          avec son album Bretonne. Ses passages sur de nombreux plateaux de télévision
+          fait découvrir ou redécouvrir la musique bretonne au grand public.</p>
+      </div>
+      <div class="imagesArticle">
+        <img src="styles/images/culture/festivalDeCornouailles.jpg">
+        <p class="descrPhoto">Festival de Cornouaille (2012)</p>
+      </div>
+    </div>
+  </div>
+  <div id="separator1" class="parallax separator" style="background-image: url('styles/images/culture/bagad.jpg')"></div>
+  <div class="article">
+    <h2>Langue</h2>
+    <div class="contenuArticle">
+      <div class="texteArticle">
+        <p>Deux groupes de <b>langues celtiques</b> se distinguent : <br></p>
+        <ul>
+          <li>Le groupe gaélique (irlandais, écossais, manxois),</li>
+          <li>Le groupe <b>brittonique</b> dont le breton fait partie avec le gallois</li>
+          <li>et le cornique.</li>
+        </ul>
+          <p>Le breton provient des <b>îles britanniques</b> mais s’apparente également au
+          <b>gaulois</b> (parlée dans une grande partie de l’Europe occidentale jusqu’au
+          Vème siècle). La langue bretonne se diversifie sans arrêt et un travail
+          de <b>traduction</b> depuis le milieu du XXème siècle permet à celle-ci de s’ouvrir
+          au monde.</p>
+      </div>
+      <div class="imagesArticle">
+        <img src="styles/images/culture/langueCeltique.png" style="width: 100px">
+        <p class="descrPhoto">Territoires possédant une langue celtique vivante</p>
+      </div>
+    </div>
+  </div>
+  <div id="separator2" class="parallax separator" style="background-image: url('styles/images/culture/tombeauMerlin.jpg')"></div>
+  <div class="article">
+    <h2>Légendes bretonnes</h2>
+    <div class="contenuArticle">
+      <div class="texteArticle">
+        <p>Les <b>forêts</b> bretonnes, les <b>menhirs</b>, le <b>patrimoine architectural riche</b> de la
+          Bretagne sont propices à l’émergence de nombre de <b>croyances</b>, légendes et <b>contes</b>.
+          La scène idéale et la plus connue pour ce genre de légendes est sans doutes la
+          <b>forêt de Brocéliande</b>, un lieu culte de la légende du <b>Roi Arthur</b>. Plusieurs sites
+          sont à visiter dans cette forêt : <br>
+          - Le <b>Val-sans-retour</b>, où les maris infidèles étaient retenus prisonnier
+          par la fée Viviane,<br>
+          - La <b>fontaine de Barenton</b>, le lieu où Merlin rencontra la Dame du Lac,<br>
+          - Le <b>tombeau de Merlin</b>, où Merlin se fit enfermer par la fée Viviane.<br><br>
+          La <b>ville engloutie d’Ys</b>, où Dahut, fille du roi Gradlon le Grand de Cornouaille,
+          régnait autrefois en maîtresse absolue. Un jour, elle tomba amoureuse d’un
+          prince étranger, qui n’était autre que le diable personnifié, et lui offrit
+          par amour la clé de l’écluse. Le prince ouvrit l’écluse et la cité fut <b>engloutie
+          par l’océan</b>. Seul le roi réussit à s’en sortir en abandonnant sa fille.
+          Aujourd’hui, les <b>pêcheurs de Douarnenez</b> entendent sonner les cloches de
+          la ville sous la mer et disent qu’un jour, Ys renaîtra plus belle que jamais.</p>
+      </div>
+      <div class="imagesArticle">
+        <img src="styles/images/culture/tombeauMerlin.jpg">
+        <p class="descrPhoto">Tombeau de Merlin dans la forêt de Brocéliande</p>
+      </div>
+    </div>
+  </div>
+  <div id="separator3" class="parallax separator" style="background-image: url('styles/images/culture/fêteBretonne.jpg')"></div>
+  <div class="article">
+    <h2>Symboles bretons</h2>
+    <div class="contenuArticle">
+      <div class="texteArticle">
+        <ul>
+          <li>Le <b>drapeau</b>, Gwen ha du, créé en 1925 par Morvan Marchal,
+            militant breton, est désormais le symbole incontesté de la Bretagne.
+            C’est un symbole de diversité et d’unité : les neufs bandes
+            alternativement noires et blanches représentent neufs pays, le
+            noir pour les pays gallo et le blanc pour les pays bretonnants.
+          </li>
+          <br>
+          <li>Le <b>Triskell</b>, symbole celte. Sa signification n’est pas admise :
+            <ul>
+              <li>un trèfle,</li>
+              <li>l’eau, la terre et le feu,</li>
+              <li>le ciel, la terre et l’eau,</li>
+              <li>les trois dieux de la religion celtique : Lug, Ogme et Dagda,</li>
+              <li>le sommeil, le rêve et l’éveil,</li>
+              <li>l’enfance, la vie adulte et la vieillesse,</li>
+              <li>le passé, le présent et le futur.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="imagesArticle">
+        <img src="styles/images/culture/drapeauBreton.png">
+        <p class="descrPhoto">Drapeau breton</p>
+      </div>
+    </div>
+  </div>
+  <div id="separator4" class="parallax separator" style="background-image: url('styles/images/culture/paysage_breton2.jpg')"></div>
+  <footer>
+    <div id="reseauxSociauxFooter">
+      <a href="http://www.facebook.com" style="grid-column:1"><p><i class="fa fa-facebook fa-lg"></i>  Facebook</p></a>
+      <a href="http://www.instagram.com" style="grid-column:2"><p><i class="fa fa-instagram fa-lg"></i>  Instagram</p></a>
+      <a href="http://www.pinterest.com" style="grid-column:3"><p><i class="fa fa-pinterest-p fa-lg"></i>  Pinterest</p></a>
+      <a href="http://www.twitter.com" style="grid-column:4"><p><i class="fa fa-twitter fa-lg"></i>  Twitter</p></a>
+    </div>
+    <div id="slider">
+      <figure>
+        <img alt="im1" src="styles/images/Carousel/im1.jpg">
+        <img alt="im2" src="styles/images/Carousel/im2.jpg">
+        <img alt="im3" src="styles/images/Carousel/im3.jpg">
+        <img alt="im4" src="styles/images/Carousel/im4.jpg">
+        <img alt="im5" src="styles/images/Carousel/im5.jpg">
+        <img alt="im6" src="styles/images/Carousel/im6.jpg">
+        <img alt="im7" src="styles/images/Carousel/im7.jpg">
+        <img alt="im8" src="styles/images/Carousel/im8.jpg">
+        <img alt="im9" src="styles/images/Carousel/im9.jpg">
+        <img alt="im10" src="styles/images/Carousel/im10.jpg">
+        <img alt="im11" src="styles/images/Carousel/im11.jpg">
+        <img alt="im12" src="styles/images/Carousel/im12.jpg">
+        <img alt="im13" src="styles/images/Carousel/im13.jpg">
+        <img alt="im14" src="styles/images/Carousel/im14.jpg">
+        <img alt="im15" src="styles/images/Carousel/im15.jpg">
+      </figure>
+    </div>
+    <div id="infos">
+      <div id="aPropos">
+        <div id="triskell"></div>
+        <h2>À propos</h2>
+        <p>Ce site a été créé dans le cadre du cours Méthodologie
+          de la production d'application (MPA).</p>
+          <p>2018 - Thomas FOULON, Brice GUILLAUME, Altan SORAN, Tristan AYMÉ-MARTIN</p>
+        </div>
+        <div id="newsletter">
+          <h2>S'abonner à la newsletter</h2>
+          <form action="index.html" method="post">
+            <div id="mail">
+              <i class="fa fa-envelope-o fa-lg"></i>
+              <input type="email" placeholder="Adresse mail"></input>
+            </div>
+            <input id="btnSub" type="submit" value="S'abonner"></input>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>

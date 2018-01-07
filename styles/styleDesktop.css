@@ -41,7 +41,7 @@ nav{
   z-index: 100; /* Evite pb carousel */
   display: block;
 }
-1
+
 #deroulerMenu{
   /* Pas d'icone mobile en affichage PC */
   display: none;
@@ -100,6 +100,25 @@ nav #reseauxSociaux i{
 
 nav #reseauxSociaux a{
   margin-right: 1%;
+}
+
+nav ul li#selectActivites nav{
+	background-color: white;
+  position : fixed;
+  z-index: 100; /* Evite pb carousel */
+  display: none;
+	padding-left: 0px;
+	width: auto;
+}
+
+nav ul li#selectActivites:hover nav{
+	display: block;
+}
+
+nav ul li#selectActivites nav ul li{
+	float: none;
+	padding: 5px 10px 5px 10px;
+	text-align: left;
 }
 
 /* Footer */
@@ -257,6 +276,7 @@ footer #infos #newsletter form #mail{
 
 footer #infos #newsletter form #mail i{
   margin-left: 2%;
+  color: #696969;
 }
 
 footer #infos #newsletter form #mail input{
