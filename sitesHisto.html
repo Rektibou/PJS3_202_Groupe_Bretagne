@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Nature - La Bretagne ça vous gagne</title>
+  <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen and (min-width:949px)" href="styles/styleDesktop.css">
+  <link rel="stylesheet" media="screen and (max-width:950px)" href="styles/styleMobile.css">
+  <link rel="stylesheet" media="screen" href="styles/pageContenu.css">
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
+  <script type="text/javascript">
+  // APPEL PLUGIN PARALLAX
+  $(document).ready(function(){ $('#main').parallax({ 'coeff':-0.2 });})
+  $(document).ready(function(){ $('#separator1').parallax({ 'coeff':-0.2 });})
+  $(document).ready(function(){ $('#separator2').parallax({ 'coeff':-0.2 });})
+  $(document).ready(function(){ $('#separator3').parallax({ 'coeff':-0.2 });})
+  </script>
+</head>
+<body>
+  <div id="presentationMobile">
+    <a id="deroulerMenu" href="javascript:void(0)" onclick="menuDeroulant();">
+      <img alt="menuMobile" src="styles/images/menuMobile.png">
+    </a>
+    <p id="titreMobile">La Bretagne ça vous gagne !</p>
+    <div id="reseauxSociauxMobile">
+      <a href="http://www.facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
+      <a href="http://www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
+      <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p fa-lg"></i></a>
+      <a href="http://www.twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="histoire.html">Histoire</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="hotels.html">Hôtels</a></li>
+      <li id="selectActivites"><a class="active" href="activites.html">Activités</a>
+        <nav>
+          <ul>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a class="active" href="sitesHisto.html">Sites historiques, musées</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li><a href="pratique.html">Pratique</a></li>
+      <li id="reseauxSociaux">
+        <a href="http://www.facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
+        <a href="http://www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
+        <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p fa-lg"></i></a>
+        <a href="http://www.twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <div id="main" class="parallax" style="background-image: url('styles/images/activites/musees/paysage_breton6.jpg');">
+    <h1 class="outline">Sites historiques et musées</h1>
+    <p class="outline">Avec un patrimoine culturel et historique aussi important,
+      il est évident que la Bretagne possède de nombreux musées vous permettant
+      de découvrir plus en profondeur l’histoire de cette région.</p>
+  </div>
+  <div class="article">
+    <h2>Musées</h2>
+    <div class="contenuArticle">
+      <div class="texteArticle">
+        <p>Les sujets des musées sont variés.
+          En effet il y a des musées d’Histoire tel que le Musée Mémoire
+          39-45, des musées spécialisés comme le Manoir de l’automobile
+          ainsi que des musées d’art tel que le musée des Beaux arts.</p>
+      </div>
+      <div class="imagesArticle">
+        <img src="styles/images/activites/musees/musée-dinan.jpg">
+        <p class="descrPhoto">Musée Remember (Dinan)</p>
+      </div>
+    </div>
+  </div>
+  <div id="separator1" class="parallax separator" style="background-image: url('styles/images/activites/musees/phare2.jpg')"></div>
+  <div class="article">
+    <h2>Sites historiques</h2>
+    <div class="contenuArticle">
+      <div class="texteArticle">
+        <ul>
+          <li><b>Cathédrale Saint-Corentin à Quimper</b> :
+            <p>On ne peut pas manquer la cathédrale Saint-Corentin lors de
+              sa balade à Quimper. Placée en bord de la rivière de l'Odet,
+              elle est impressionnante avec ses deux grandes flèches.
+              Il faut la visiter pour ses magnifiques vitraux, ainsi que
+              sa statue de Jeanne d’Arc. Elle est aussi intéressante pour
+              son <b>axe principal courbé</b>, ce qui n’est pas commun.<br><br>
+            </p>
+          </li>
+          <li><b>Les remparts de Saint-Malo</b> :
+            <p>C’est une promenade incontournable lors de sa découverte de
+              Saint-Malo, les remparts permettent d'entrevoir un <b>panoramique
+              de l'endroit</b> avec une vue sur le fort national, Grand Bé,
+              Petit Bé, la Cité d'Alet, on y voit aussi Dinard qui se situe
+              de l’autre côté de l’estuaire de la Rance.​<br><br>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="imagesArticle">
+        <img style="max-height: 300px" src="styles/images/activites/musees/Quimper.jpg">
+        <img style="max-width: 300px;" src="styles/images/activites/musees/remparts.jpg">
+        <img style="max-width: 300px;" src="styles/images/activites/musees/paysage_breton8.jpg">
+      </div>
+    </div>
+  </div>
+  <div id="separator2" class="parallax separator" style="background-image: url('styles/images/activites/musees/paysage_breton7.jpg')"></div>
+  <div class="article">
+    <h2>D'autres sites historiques</h2>
+    <div class="contenuArticle">
+      <div class="texteArticle">
+        <ul>
+          <li><b>Le mont saint Michel</b> :
+            <p>Figure emblématique de la Bretagne, de la Normandie,
+              et de la France, cet îlot rocheux est surmonté d’une abbaye
+              du XIème siècle, il est incontournable pour commencer une
+              promenade en Bretagne. Il accueille plus de 3 millions de
+              visiteurs par an.<br><br>
+            </p>
+          </li>
+          <li>Les alignements de <b>mégalithes de Carnac</b> :
+            <p>Tout le monde connaît les menhirs de Carnac. Lors de son
+              passage dans le Morbihan, il ne faut surtout pas les rater,
+              ce n’est pas partout que l'on peut voir des menhirs et des
+              dolmen, magnifiques traces de l’Histoire.<br><br>
+            </p>
+          </li>
+          <li>Site Naturel de <b>Ploumanac'h</b> :
+            <p>Site exceptionnel sur la côte de granite rose,
+              aventurez vous sur le sentier des douaniers pour découvrir
+              des vues imprenables, et voir le magnifique phare en granite
+              rose. Cette balade vous offrira des vues inoubliables.<br><br>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="imagesArticle">
+        <img src="styles/images/activites/musees/mont_st_michel.jpg">
+        <img src="styles/images/activites/musees/carnac2.jpg">
+      </div>
+    </div>
+  </div>
+  <div id="separator3" class="parallax separator" style="background-image: url('styles/images/activites/musees/paysage_breton2.jpg')"></div>
+  <footer>
+    <div id="reseauxSociauxFooter">
+      <a href="http://www.facebook.com" style="grid-column:1"><p><i class="fa fa-facebook fa-lg"></i>  Facebook</p></a>
+      <a href="http://www.instagram.com" style="grid-column:2"><p><i class="fa fa-instagram fa-lg"></i>  Instagram</p></a>
+      <a href="http://www.pinterest.com" style="grid-column:3"><p><i class="fa fa-pinterest-p fa-lg"></i>  Pinterest</p></a>
+      <a href="http://www.twitter.com" style="grid-column:4"><p><i class="fa fa-twitter fa-lg"></i>  Twitter</p></a>
+    </div>
+    <div id="slider">
+      <figure>
+        <img alt="im1" src="styles/images/Carousel/im1.jpg">
+        <img alt="im2" src="styles/images/Carousel/im2.jpg">
+        <img alt="im3" src="styles/images/Carousel/im3.jpg">
+        <img alt="im4" src="styles/images/Carousel/im4.jpg">
+        <img alt="im5" src="styles/images/Carousel/im5.jpg">
+        <img alt="im6" src="styles/images/Carousel/im6.jpg">
+        <img alt="im7" src="styles/images/Carousel/im7.jpg">
+        <img alt="im8" src="styles/images/Carousel/im8.jpg">
+        <img alt="im9" src="styles/images/Carousel/im9.jpg">
+        <img alt="im10" src="styles/images/Carousel/im10.jpg">
+        <img alt="im11" src="styles/images/Carousel/im11.jpg">
+        <img alt="im12" src="styles/images/Carousel/im12.jpg">
+        <img alt="im13" src="styles/images/Carousel/im13.jpg">
+        <img alt="im14" src="styles/images/Carousel/im14.jpg">
+        <img alt="im15" src="styles/images/Carousel/im15.jpg">
+      </figure>
+    </div>
+    <div id="infos">
+      <div id="aPropos">
+        <div id="triskell"></div>
+        <h2>À propos</h2>
+        <p>Ce site a été créé dans le cadre du cours Méthodologie
+          de la production d'application (MPA).</p>
+          <p>2018 - Thomas FOULON, Brice GUILLAUME, Altan SORAN, Tristan AYMÉ-MARTIN</p>
+        </div>
+        <div id="newsletter">
+          <h2>S'abonner à la newsletter</h2>
+          <form action="index.html" method="post">
+            <div id="mail">
+              <i class="fa fa-envelope-o fa-lg"></i>
+              <input type="email" placeholder="Adresse mail"></input>
+            </div>
+            <input id="btnSub" type="submit" value="S'abonner"></input>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>

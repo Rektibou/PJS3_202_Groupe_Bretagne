@@ -2,39 +2,117 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>La Bretagne ça vous gagne</title>
-  <link rel="stylesheet" media="screen" href="styles/style.css">
+  <title>Activités - La Bretagne ça vous gagne</title>
+  <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen and (min-width:949px)" href="styles/styleDesktop.css">
+  <link rel="stylesheet" media="screen and (max-width:950px)" href="styles/styleMobile.css">
+  <link rel="stylesheet" media="screen" href="styles/pageContenu.css">
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
+  <script type="text/javascript">
+  // APPEL PLUGIN PARALLAX
+  $(document).ready(function(){ $('#main').parallax({ 'coeff':-0.2 });})
+  $(document).ready(function(){ $('#separator1').parallax({ 'coeff':-0.2 });})
+  </script>
+</head>
+<body>
+  <div id="presentationMobile">
+    <a id="deroulerMenu" href="javascript:void(0)" onclick="menuDeroulant();">
+      <img alt="menuMobile" src="styles/images/menuMobile.png">
+    </a>
+    <p id="titreMobile">La Bretagne ça vous gagne !</p>
+    <div id="reseauxSociauxMobile">
+      <a href="http://www.facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
+      <a href="http://www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
+      <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p fa-lg"></i></a>
+      <a href="http://www.twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
+    </div>
+  </div>
   <nav>
-		<ul>
-			<li><a class="active" href="index.html">Accueil</a></li>
-			<li><a href="histoire.html">Histoire</a></li>
-			<li><a href="culture.html">Culture</a></li>
-			<li><a href="hotels.html">Hôtels</a></li>
-			<li><a href="activites.html">Activités</a></li>
-			<li><a href="pratique.html">Pratique</a></li>
-		</ul>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="histoire.html">Histoire</a></li>
+      <li><a href="culture.html">Culture</a></li>
+      <li><a href="hotels.html">Hôtels</a></li>
+      <li id="selectActivites"><a class="active" href="activites.html">Activités</a>
+        <nav>
+          <ul>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="sitesHisto.html">Sites historiques, musées</a></li>
+          </ul>
+        </nav>
+      </li>
+      <li><a href="pratique.html">Pratique</a></li>
+      <li id="reseauxSociaux">
+        <a href="http://www.facebook.com"><i class="fa fa-facebook fa-lg"></i></a>
+        <a href="http://www.instagram.com"><i class="fa fa-instagram fa-lg"></i></a>
+        <a href="http://www.pinterest.com"><i class="fa fa-pinterest-p fa-lg"></i></a>
+        <a href="http://www.twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
+      </li>
+    </ul>
   </nav>
-  <div id="ecranAccueil" class="parallax">
-    <h1 class="outline">La Bretagne ça vous gagne !</h1>
-    <p id="toContentAccueil">
-      <a href="#contentAccueil">
-        <img src="styles/images/arrow.png">
-      </a>
-    </p>
-  </div>
-  <div id="contentAccueil">
-	<div id="selectRubrique">
-	  <p>Test</p>
-	  <p>Test</p>
-	  <p>Test</p>
-	  <p>Test</p>
-	  <p>Test</p>
-	  <p>Test</p>
-	  <p>Test</p>
-	  <p>Test</p>
-	  <p>Test</p>
-	  <p>Test</p>
-	</div>
-  </div>
-</body>
-</html>
+  <div id="main" class="parallax" style="background-image: url('styles/images/activites/paysage_breton3.jpg');">
+    <h1 class="outline">Activités</h1>
+    <p class="outline">Nous vous proposons de découvrir les différentes activités
+      que la région a à vous offrir à travers les sites historiques et les musées
+      de la région mais également à l'extérieur avec des lieux et paysages tous
+      plus magniques les uns que les autres.</p>
+    </div>
+    <div id="selectRubrique">
+      <div class="itemGalerie" id="nature">
+        <a href="nature.html"><p>Nature</p></a>
+      </div>
+      <div class="itemGalerie" id="musees">
+        <a href="sitesHisto.html"><p>Sites historiques, musées<p></a>
+      </div>
+    </div>
+    <div id="separator1" class="parallax separator" style="background-image: url('styles/images/activites/paysage_breton4.jpg')"></div>
+    <footer>
+      <div id="reseauxSociauxFooter">
+        <a href="http://www.facebook.com" style="grid-column:1"><p><i class="fa fa-facebook fa-lg"></i>  Facebook</p></a>
+        <a href="http://www.instagram.com" style="grid-column:2"><p><i class="fa fa-instagram fa-lg"></i>  Instagram</p></a>
+        <a href="http://www.pinterest.com" style="grid-column:3"><p><i class="fa fa-pinterest-p fa-lg"></i>  Pinterest</p></a>
+        <a href="http://www.twitter.com" style="grid-column:4"><p><i class="fa fa-twitter fa-lg"></i>  Twitter</p></a>
+      </div>
+      <div id="slider">
+        <figure>
+          <img alt="im1" src="styles/images/Carousel/im1.jpg">
+          <img alt="im2" src="styles/images/Carousel/im2.jpg">
+          <img alt="im3" src="styles/images/Carousel/im3.jpg">
+          <img alt="im4" src="styles/images/Carousel/im4.jpg">
+          <img alt="im5" src="styles/images/Carousel/im5.jpg">
+          <img alt="im6" src="styles/images/Carousel/im6.jpg">
+          <img alt="im7" src="styles/images/Carousel/im7.jpg">
+          <img alt="im8" src="styles/images/Carousel/im8.jpg">
+          <img alt="im9" src="styles/images/Carousel/im9.jpg">
+          <img alt="im10" src="styles/images/Carousel/im10.jpg">
+          <img alt="im11" src="styles/images/Carousel/im11.jpg">
+          <img alt="im12" src="styles/images/Carousel/im12.jpg">
+          <img alt="im13" src="styles/images/Carousel/im13.jpg">
+          <img alt="im14" src="styles/images/Carousel/im14.jpg">
+          <img alt="im15" src="styles/images/Carousel/im15.jpg">
+        </figure>
+      </div>
+      <div id="infos">
+        <div id="aPropos">
+          <div id="triskell"></div>
+          <h2>À propos</h2>
+          <p>Ce site a été créé dans le cadre du cours Méthodologie
+            de la production d'application (MPA).</p>
+            <p>2018 - Thomas FOULON, Brice GUILLAUME, Altan SORAN, Tristan AYMÉ-MARTIN</p>
+          </div>
+          <div id="newsletter">
+            <h2>S'abonner à la newsletter</h2>
+            <form action="index.html" method="post">
+              <div id="mail">
+                <i class="fa fa-envelope-o fa-lg"></i>
+                <input type="email" placeholder="Adresse mail"></input>
+              </div>
+              <input id="btnSub" type="submit" value="S'abonner"></input>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </html>
